@@ -85,3 +85,44 @@ let mappedNames = pets.map(function(pet) {
 })
 
 console.log(mappedNames)
+
+// reduce - most commonly used to summarize information
+
+const orders = [
+  { amount: 250},
+  { amount: 2350},
+  { amount: 20},
+  { amount: 210},
+  { amount: 250.69}
+]
+
+// summarize all the amounts
+// reduce gives you one thing
+
+let totalAmount = 0
+
+for (let i = 0; i < orders.length; i++) {
+  console.log(orders[i])
+  console.log(orders[i].amount)
+  totalAmount = totalAmount + orders[i].amount
+  
+}
+
+console.log(totalAmount)
+
+// REDUCE
+  // also returns a new array
+  // uses of previous value
+
+let reducedAmount = orders.reduce(function(sum, order) {
+  console.log(sum, " + ", order)
+  return sum + order.amount
+}, 0)
+
+console.log(reducedAmount)
+
+let amount = orders.reduce(function(sum, order) {
+  return sum + order.amount
+}, 0)
+
+console.log(amount)
