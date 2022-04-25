@@ -73,3 +73,11 @@ console.log(joinedStudents)
 
 let backToArray = joinedStudents.split(' and ')
 console.log(backToArray)
+
+let cars = ['Mercedes Benz', 'BMW', 'Tesla', 'Lexus', 'Mustang', 'Bugatti']
+
+console.log(cars)
+
+for(let i = 0; i < cars.length; i++) {
+  console.log(cars[i])
+}
