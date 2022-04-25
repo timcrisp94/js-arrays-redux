@@ -53,3 +53,11 @@ console.log(students)
 
 students.splice(2, 0, 'Edwin')
 console.log(students)
+
+
+let albums = ['innervisions', 'bitches brew', 'giant steps', 'the shape of jazz to come', 'let it be']
+
+let albumsCopy = [...albums]
+
+console.log(albums)
+console.log(albumsCopy)
