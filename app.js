@@ -78,10 +78,30 @@ let cars = ['Mercedes Benz', 'BMW', 'Tesla', 'Lexus', 'Mustang', 'Bugatti']
 
 console.log(cars)
 
-for(let i = 0; i < cars.length; i++) {
-  console.log(cars[i])
+// for loop
+
+// for(let i = 0; i < cars.length; i++) {
+//   console.log(cars[i])
+// }
+
+// forEach
+
+// cars.forEach(function(car, idx) {
+//   console.log(car, idx)
+// })
+
+// for of loop
+
+for(let i of cars) {
+  console.log(i)
 }
 
-cars.forEach(function(car, idx) {
-  console.log(car, idx)
-})
+for (let car of cars) {
+  console.log(car)
+}
+
+// for in loop
+
+for (let i in cars) {
+  console.log(i)
+}
