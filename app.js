@@ -61,3 +61,9 @@ let albumsCopy = [...albums]
 
 console.log(albums)
 console.log(albumsCopy)
+
+// .join() - takes all the elements of the array and joins them with your argument
+// converts the whole array into a string
+
+let joinedStudents = students.join(' and ')
+console.log(joinedStudents)
