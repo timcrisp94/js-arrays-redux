@@ -28,3 +28,8 @@ let studentThatGotPopped = students.pop()
 console.log(students)
 console.log(studentThatGotPopped)
 
+// .shift() - remove the first item
+
+students.shift()
+console.log(students)
+
