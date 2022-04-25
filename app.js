@@ -67,3 +67,9 @@ console.log(albumsCopy)
 
 let joinedStudents = students.join(' and ')
 console.log(joinedStudents)
+
+// .split() - splits a string into an array separated by a comma
+// according to your argument
+
+let backToArray = joinedStudents.split(' and ')
+console.log(backToArray)
