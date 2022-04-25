@@ -38,3 +38,18 @@ console.log(students)
 students.unshift('Joseph')
 console.log(students)
 
+// .splice() - remove more than one element
+  // first argument = where do you want to start? (index)
+  // second argument = how many do you want to delete?
+
+// students.splice(1, 2)
+// console.log(students)
+
+
+// .splice() - you can also add more than one element
+  // first - start? (index)
+  // second - how many do you want to delete? 
+  // third - the item to add
+
+students.splice(2, 0, 'Edwin')
+console.log(students)
