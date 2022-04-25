@@ -20,5 +20,39 @@ const pets = [
   {name: 'Steve', species: 'fish'},
   {name: 'Herbie', species: 'bird'}
 
-
 ]
+
+// filter out all the dogs
+
+let dogs = []
+// for (let i of pets) {
+//   if (pets[i].species === 'dog') {
+//     dogs.push(pets[i])
+//   }
+// }
+
+
+for (let i = 0; i < pets.length; i++) {
+  // console.log(pets[i]['species'])
+  // console.log(pets[i].species)
+  if(pets[i].species === 'dog') {
+    dogs.push(pets[i])
+  }
+} 
+
+console.log(dogs)
+
+// filter method
+// 1. creates a new array for us
+// 2. returns the filtered items only
+// 3. the callback fn returns a boolean value to the filter method
+
+// there are 2 different problems going on here
+  // putting them in a separate array
+  // while iterating
+
+let filteredDogs = pets.filter(function(pet) {
+  return pet.species === 'dog'
+})
+
+console.log(filteredDogs)
