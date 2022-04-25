@@ -4,3 +4,6 @@ arrays are the data structure of choice for holding lists of data
 
 index zero
 
+arrays contain elements
+
+arrays are considered ordered
