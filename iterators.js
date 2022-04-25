@@ -12,3 +12,13 @@ for (let index =0; index < arr.length; index++) {
 
 // Declarative - what to do
 
+const pets = [
+  {name: 'Hadley', species: 'dog'},
+  {name: 'Lily', species: 'dog'},
+  {name: 'Chloe', species: 'dog'},
+  {name: 'Basket', species: 'cat'},
+  {name: 'Steve', species: 'fish'},
+  {name: 'Herbie', species: 'bird'}
+
+
+]
