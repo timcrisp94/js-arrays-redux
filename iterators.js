@@ -126,3 +126,42 @@ let amount = orders.reduce(function(sum, order) {
 }, 0)
 
 console.log(amount)
+
+// you do
+
+// given an array of instructors use map to create a new array that adds the string "is awesome" to each array element
+
+const instructors = ["Ben", "David", "Shahzad", "Emily", "Angie", "Jurgen", "Hunter", "Joe", "Ian"]
+
+for (let i = 0; i < instructors.length; i++) {
+  console.log(instructors[i] + " is awesome")
+}
+
+let ooop = []
+
+for (let i = 0; i < instructors.length; i++) {
+  console.log(instructors[i])
+  ooop.push(instructors[i] + " is awesome")
+}
+
+console.log(ooop)
+
+let mappedInst = instructors.map(function(instructor) {
+  return (instructor + " is awesome ")
+})
+
+console.log(mappedInst)
+
+const myTransactions = [
+  { type: 'charge', amount: 30, category: 'dining'},
+  { type: 'charge', amount: 300, category: 'shopping'},
+  { type: 'charge', amount: 303, category: 'atm'},
+  { type: 'charge', amount: 3000, category: 'check'},
+  { type: 'charge', amount: 3.33, category: 'dining'},
+  { type: 'charge', amount: 300, category: 'shopping'},
+  { type: 'charge', amount: 33, category: 'dining'},
+  { type: 'charge', amount: 30, category: 'dining'}
+]
+
+// objective is to figure out the total amount of money charged for dining
+
