@@ -155,8 +155,8 @@ console.log(mappedInst)
 const myTransactions = [
   { type: 'charge', amount: 30, category: 'dining'},
   { type: 'charge', amount: 300, category: 'shopping'},
-  { type: 'charge', amount: 303, category: 'atm'},
-  { type: 'charge', amount: 3000, category: 'check'},
+  { type: 'wd', amount: 303, category: 'atm'},
+  { type: 'deposit', amount: 3000, category: 'check'},
   { type: 'charge', amount: 3.33, category: 'dining'},
   { type: 'charge', amount: 300, category: 'shopping'},
   { type: 'charge', amount: 33, category: 'dining'},
@@ -165,3 +165,17 @@ const myTransactions = [
 
 // objective is to figure out the total amount of money charged for dining
 
+// first i shall filter out all the types that are charge
+// second i shall filter out the categories at that are dining
+// then i shall give the amounts
+// then i shall summarize the amount
+
+const totalSpendingOnDining = myTransactions
+    .filter(transaction => transaction.type === 'charge')
+    .filter(transaction => transaction.category === 'dining')
+    .map(transaction => transaction.amount)
+    .reduce((prev, amount) => (prev || 0) + amount)
+
+console.log(`The total charge for dining is $ ${totalSpendingOnDining}`)
+
+// arrow functions have explicit returns

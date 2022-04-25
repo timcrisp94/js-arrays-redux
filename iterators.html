@@ -35,5 +35,20 @@
         </li>
       </ul>
   </div>
+  <div>
+    <h4>By far the hottest</h4>
+    <h4>Shah's solution, given an object myTransactions, for figuring out the total amount of money spent on dining</h4>
+    <h4> </h4>
+    <h4>const totalSpendingOnDining = myTransactions</h4>
+    <div id="sha-solution">
+      <p>.filter(transaction => transaction.type === 'charge')</p>
+      <p>.filter(transaction => transaction.category === 'dining')</p>
+      <p>.map(transaction => transaction.amount)</p>
+      <p>.reduce((prev, amount) => (prev || 0) + amount</p>
+      <p></p>
+      <p>console.log(`The total charge for dining is $ ${totalSpendingOnDining}`)</p>
+    </div>
+  </div>
+  
 </body>
 </html>
