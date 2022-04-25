@@ -33,3 +33,8 @@ console.log(studentThatGotPopped)
 students.shift()
 console.log(students)
 
+// .unshift() - adds to the front of the array
+
+students.unshift('Joseph')
+console.log(students)
+
