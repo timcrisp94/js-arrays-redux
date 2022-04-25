@@ -24,7 +24,7 @@ const pets = [
 
 // filter out all the dogs
 
-let dogs = []
+// let dogs = []
 // for (let i of pets) {
 //   if (pets[i].species === 'dog') {
 //     dogs.push(pets[i])
@@ -32,15 +32,15 @@ let dogs = []
 // }
 
 
-for (let i = 0; i < pets.length; i++) {
+// for (let i = 0; i < pets.length; i++) {
   // console.log(pets[i]['species'])
-  // console.log(pets[i].species)
-  if(pets[i].species === 'dog') {
-    dogs.push(pets[i])
-  }
-} 
+//   // console.log(pets[i].species)
+//   if(pets[i].species === 'dog') {
+//     dogs.push(pets[i])
+//   }
+// } 
 
-console.log(dogs)
+// console.log(dogs)
 
 // filter method
 // 1. creates a new array for us
@@ -51,8 +51,37 @@ console.log(dogs)
   // putting them in a separate array
   // while iterating
 
-let filteredDogs = pets.filter(function(pet) {
-  return pet.species === 'dog'
+// let filteredDogs = pets.filter(function(pet) {
+//   return pet.species === 'dog'
+// })
+
+// console.log(filteredDogs)
+
+// Second task is to print out all the names
+
+let names = []
+
+for (let i = 0; i < pets.length; i++) {
+  console.log(i)
+  console.log(pets[i].name)
+  names.push(pets[i].name)
+  
+}
+
+console.log(names.join(' and '))
+
+for (let idx = 0; idx < pets.length; idx++) {
+  names.push(pets[idx].name)
+  
+}
+
+// dot map
+// TRANSFORMS THE ARRAY
+// returns a new transformed array
+// returns the same amount of elements
+
+let mappedNames = pets.map(function(pet) {
+  return pet.name
 })
 
-console.log(filteredDogs)
+console.log(mappedNames)
