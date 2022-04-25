@@ -13,3 +13,18 @@ console.log(students[5])
 console.log(students[1][0])
 
 console.log(students.length)
+
+// add an element to the end of an array 
+// .push()
+
+students.push('dave')
+
+console.log(students)
+
+// .pop() - removes the last item
+
+let studentThatGotPopped = students.pop()
+
+console.log(students)
+console.log(studentThatGotPopped)
+
