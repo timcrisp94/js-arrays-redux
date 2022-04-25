@@ -5,7 +5,11 @@ body {
 
 h2 {
   color: purple;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
-  
+
+}
+
+#dot-map {
+  font-weight: 600;
+  font-style: oblique;  
+  color: rgb(144, 14, 214)
 }
