@@ -247,3 +247,26 @@ let missingCar = cars.find(function(car) {
 
 // /*--- using an arrow function for the callback ---*/
 // let firstWhiteCar = cars.find(car => car.color === 'white')
+
+let hasFord = cars.some(function(car) {
+  return car.make === 'Ford'
+})
+
+console.log(hasFord)
+
+let hasBMW = cars.some(cars => cars.make === 'bmw'.toUpperCase())
+
+console.log(hasBMW)
+
+let old = cars.some(function(car) {
+  return car.year < 2002
+})
+
+console.log(old)
+
+let eww = cars.some(car => car.make === 'Tesla')
+
+console.log(eww)
+
+
+
