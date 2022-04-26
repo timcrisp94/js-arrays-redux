@@ -268,5 +268,23 @@ let eww = cars.some(car => car.make === 'Tesla')
 
 console.log(eww)
 
+let blueCarsOnly = cars.every(function(car) {
+  return car.color === 'blue'
+})
 
+let blueCarsSome = cars.some(function(car) {
+  return car.color === 'blue'
+})
+
+console.log(blueCarsOnly)
+console.log(blueCarsSome)
+
+let redCarsOnly = cars.every(car => car.color === 'red')
+console.log(redCarsOnly)
+
+let redCarsSome = cars.some(function(car) {
+  return car.color === 'red'
+})
+
+console.log(redCarsSome)
 
