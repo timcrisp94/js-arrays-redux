@@ -17,13 +17,6 @@ const inventors = [
 
 // Array.prototype.filter()
 // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's.
-
-let filteredNames = inventors.filter(function(inventor) {
-  return inventor.year < 1600
-})
-
-
-
 // Array.prototype.map()
 // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties.
 
