@@ -43,107 +43,107 @@ const friends = ["Melissa", "Marc", "Andrew", "Nick"]
 //   console.log(friend.toUpperCase())
 // })
 
-const nums = [1, 2, 3]
-const squared = nums.map(function(num) {
-  return num * num
-})
+// const nums = [1, 2, 3]
+// const squared = nums.map(function(num) {
+//   return num * num
+// })
 
-console.log(squared)
+// console.log(squared)
 
-let sqd = []
+// let sqd = []
 
-for (let i = 0; i < nums.length; i ++) {
-  sqd.push(nums[i] * nums[i])  
-}
+// for (let i = 0; i < nums.length; i ++) {
+//   sqd.push(nums[i] * nums[i])  
+// }
 
-console.log(sqd)
+// console.log(sqd)
 
-const s =  nums.map(function(num) {
-  return num * num
-})
+// const s =  nums.map(function(num) {
+//   return num * num
+// })
 
-console.log(s)
+// console.log(s)
 
-const sq = nums.map(function(num) {
-  return num * num
-})
+// const sq = nums.map(function(num) {
+//   return num * num
+// })
 
-console.log(sq)
+// console.log(sq)
 
-const squ = nums.map(function(num) {
-  return num ** 2
-})
+// const squ = nums.map(function(num) {
+//   return num ** 2
+// })
 
-console.log(squ)
+// console.log(squ)
 
-const squa = nums.map(function(num) {
-  return num * num
-})
+// const squa = nums.map(function(num) {
+//   return num * num
+// })
 
-console.log(squa)
+// console.log(squa)
 
-const squar = nums.map(num => num * num)
+// const squar = nums.map(num => num * num)
 
-console.log(squa)
+// console.log(squa)
 
-const square = nums.map(num => num ** 2)
+// const square = nums.map(num => num ** 2)
 
-console.log(square)
+// console.log(square)
 
-const people = [
-  {name: 'Fred', town: 'Bedrock'},
-  {name: 'Susan', town: 'Miami'},
-  {name: 'John', town: 'Arcadia'}
-]
+// const people = [
+//   {name: 'Fred', town: 'Bedrock'},
+//   {name: 'Susan', town: 'Miami'},
+//   {name: 'John', town: 'Arcadia'}
+// ]
 
-const els = people.map(function(person, idx) {
-  const el = document.createElement('div')
-  el.innerHTML = `${person.name} <span>(${person.town})</span>`
-  return el
-});
+// const els = people.map(function(person, idx) {
+//   const el = document.createElement('div')
+//   el.innerHTML = `${person.name} <span>(${person.town})</span>`
+//   return el
+// });
 
-console.log(els)
+// console.log(els)
 
-const e = people.map(function(person, i) {
-  const el = document.createElement('div')
-  el.innerHTML = `${person.name} <span> (${person.town})</span>`
-  return el
-})
+// const e = people.map(function(person, i) {
+//   const el = document.createElement('div')
+//   el.innerHTML = `${person.name} <span> (${person.town})</span>`
+//   return el
+// })
 
-console.log(e)
+// console.log(e)
 
-const ell = people.map(function(person, i) {
-  const el = document.createElement('div')
-  el.innerHTML = `${person.name} <span> (${person.town})</span>`
-  return el
-})
+// const ell = people.map(function(person, i) {
+//   const el = document.createElement('div')
+//   el.innerHTML = `${person.name} <span> (${person.town})</span>`
+//   return el
+// })
 
-console.log(ell)
+// console.log(ell)
 
-const numbers = [25, 6, 100, 3]
-let summ = numbers.reduce(function(prev, num) {
-  return prev + num
-}, 0)
+// const numbers = [25, 6, 100, 3]
+// let summ = numbers.reduce(function(prev, num) {
+//   return prev + num
+// }, 0)
 
-console.log(summ)
+// console.log(summ)
 
-let some = numbers.reduce(function(prev, num) {
-  return prev + num
-}, 0)
+// let some = numbers.reduce(function(prev, num) {
+//   return prev + num
+// }, 0)
 
-let shum = 0
-for (let i = 0; i < numbers.length; i++) {
-  shum += numbers[i] 
-}
+// let shum = 0
+// for (let i = 0; i < numbers.length; i++) {
+//   shum += numbers[i] 
+// }
 
-console.log(shum)
+// console.log(shum)
 
-let som = numbers.reduce((prev, num) => prev + num)
-console.log(som)
+// let som = numbers.reduce((prev, num) => prev + num)
+// console.log(som)
 
-let somesome = numbers.reduce(function(prev, num) {
-  return prev + num
-}, 0)
+// let somesome = numbers.reduce(function(prev, num) {
+//   return prev + num
+// }, 0)
 
 const votes = ['Yes', 'No', 'No', 'Yes', 'Yes']
 let tally = votes.reduce(function(prev, vote) {
@@ -171,3 +171,47 @@ let voteTally = votes.reduce((prev, vote) => {
   return prev
 }, {})
 
+let tallieVo = votes.reduce(function(prev, vote) {
+  prev[vote] = prev[vote] ? prev[vote] + 1 : 1
+  return prev
+}, {})
+
+const nums = [100, 2, 5, 42, 99]
+const odds = nums.filter(function(num) {
+  return num % 2
+});
+
+console.log(odds)
+
+const ods = nums.filter(function(num) {
+  return num % 2
+}) 
+
+console.log(ods)
+
+const notEvens = nums.filter(function(num) {
+  return num % 2
+})
+
+console.log(notEvens)
+
+const nevens = nums.filter(function(num) {
+  return num % 2
+})
+
+console.log(nevens)
+
+const oudds = nums.filter(num => num % 2)
+
+console.log(oudds)
+
+const people = ['jerks', 'nice', 'jerks', 'nice', 'nice']
+
+const nice = people.filter(function(people) {
+  return people === 'nice'
+})
+
+console.log(nice)
+
+/*--- using an arrow function for the callback ---*/
+// const odds = nums.filter(num => num % 2)
