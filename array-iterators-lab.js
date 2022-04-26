@@ -24,9 +24,32 @@ const justNames = inventors.map(function(inventor) {
 
 console.log(justNames)
 
+const birthdaySort = inventors.sort(function(oldest, youngest) {
+  return oldest.year - youngest.year
+})
 
+const birthdayOtherSort = inventors.sort(function(oldest, youngest) {
+  return oldest.year - youngest.year
+})
 
+console.log(birthdaySort)
+console.log(birthdayOtherSort)
 
+const livedLongest = inventors.sort(function(oldest, youngest) {
+  return (oldest.passed - oldest.year) - (youngest.passed - youngest.year)
+})
+
+console.log(livedLongest)
+
+// find out how many years all the inventors lived
+// let totalYears dot map
+// dot filter
+
+const totalYear = inventors
+  .map(inventor => inventor.passed - inventor.year)
+  .reduce((prev, amount) => (prev || 0) + amount)
+
+console.log(totalYear)
 
 
 
