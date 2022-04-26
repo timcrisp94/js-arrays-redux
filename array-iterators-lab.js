@@ -57,11 +57,6 @@ console.log(totalYear)
 
 
 
-
-
-
-
-
 const people = [
   'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
   'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul',
