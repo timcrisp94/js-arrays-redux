@@ -187,7 +187,7 @@ const myTransactions2 = [
   { type: 'deposit', amount: 3000, category: 'check'},
   { type: 'charge', amount: 3.33, category: 'dining'},
   { type: 'charge', amount: 300, category: 'shopping'},
-  { type: 'charge', amount: 33, category: 'dining'},
+  { type: 'deposit', amount: 33, category: 'check'},
   { type: 'charge', amount: 30, category: 'dining'}
 ]
 
@@ -205,4 +205,34 @@ const theTotalAmountSpentOnDining = myTransactions2
     .reduce((prev, amount) => (prev || 0) + amount)
 
 console.log(`The total amount spent on dining is $ ${theTotalAmountSpentOnDining}`)
+
+const totalDeposited = myTransactions2
+    .filter(transaction => transaction.type === 'deposit')
+    .map(transaction => transaction.amount)
+    .reduce((prev, amount) => (prev || 0) + amount)
+
+console.log(`the total amount deposited is ${totalDeposited}`)
+
+const myTransactions3 = [
+  { type: 'charge', amount: 30, category: 'groceries'},
+  { type: 'charge', amount: 300, category: 'shopping'},
+  { type: 'wd', amount: 303, category: 'atm'},
+  { type: 'deposit', amount: 3000, category: 'check'},
+  { type: 'charge', amount: 3.33, category: 'groceries'},
+  { type: 'charge', amount: 300, category: 'shopping'},
+  { type: 'deposit', amount: 33, category: 'check'},
+  { type: 'charge', amount: 30, category: 'groceries'}
+]
+
+const totalSpentOnShopping = myTransactions3
+  .filter(transaction => transaction.category === 'shopping')
+  .map(transaction => transaction.amount)
+  .reduce((prev, amount) => (prev || 0) + amount)
+
+
+console.log(`${totalSpentOnShopping}`)
+
+// let filteredDogs = pets.filter(function(pet) {
+//   return pet.species === 'dog'
+// })
 
