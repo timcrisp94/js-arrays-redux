@@ -39,6 +39,8 @@ let albums = [
 ]
 
 let html = "<table border='1|1'>";
+
+
 for (var i = 0; i < albums.length; i++) {
     html+="<tr>";
     html+="<td>"+albums[i].album+"</td>";
@@ -52,3 +54,4 @@ for (var i = 0; i < albums.length; i++) {
 }
 html+="</table>";
 document.getElementById("box").innerHTML = html;
+
