@@ -32,11 +32,12 @@ let albums = [
   {album: "AM", artist: "Ovlov", year: 2013, genre: "rock", type: "LP"},
   {album: "Black Sabbath", artist: "Black Sabbath", year: 1970, genre: "rock", type: "LP"},
   {album: `Summertime '06`, artist: "Vince Staples", year: 2015, genre: "rap", type: "double-LP"},
-  {album: "Tom Petty", artist: "Full Moon Fever", year: 1989, genre: "rock", type: "LP"},
   {album: "Singles Going Steady", artist: "Buzzcocks", year: 1979, genre: "rock", type: "compilation"},
   {album: "Lucinda Williams", artist: "Lucinda Williams", year: 1989, genre: "country", type: "LP"}
 
 ]
+
+console.log(albums)
 
 let html = "<table border='1|1'>";
 
@@ -55,3 +56,26 @@ for (var i = 0; i < albums.length; i++) {
 html+="</table>";
 document.getElementById("box").innerHTML = html;
 
+const numberOne = albums.filter(function(album) {
+  if ((album.year > 1969) && (album.year < 1980)) {
+    return true
+  }
+})
+
+console.log(numberOne)
+
+// map the array of albums into a new array containing objects with just the album name and artist as properties
+
+const numberTwo = albums.map(function(album) {
+  return { name: album.album, artist: album.artist}
+})
+
+console.log(numberTwo)
+
+// sort the albums by release date past to present
+
+const numberThree = albums.sort(function(albumA, albumB) {
+  return albumA.year - albumB.year
+})
+
+console.log(numberThree)
