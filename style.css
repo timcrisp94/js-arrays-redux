@@ -15,6 +15,12 @@ h2 {
   color: rgb(144, 14, 214)
 }
 
-#shah-solution {
+#shah-solution, #at, #at-index {
   padding-left: 30px;
+}
+
+#at-index {
+  font-style: italic;
+  font-weight: 600;
+  
 }
