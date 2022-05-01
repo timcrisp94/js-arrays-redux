@@ -116,3 +116,12 @@ for (let i = 0; i < albums.length; i++) {
 }
 
 console.log("ep count: " + numberEight.length)
+
+const numberNine = albums.reduce(function(Beatles, album) {
+  if (album.artist === 'The Beatles') {
+    Beatles++
+  }
+  return Beatles
+}, 0)
+
+console.log(numberNine)
