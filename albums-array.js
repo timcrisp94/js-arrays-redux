@@ -80,3 +80,17 @@ const numberThree = albums.sort(function(albumA, albumB) {
 })
 
 console.log(numberThree)
+
+// sort the albums alphabetically by genre
+
+// find albums celebrating a 5 or ten year anniversary
+
+const numberFive = albums.filter(function(album) {
+  let years = 2022 - album.year
+  if(years % 5 === 0) {
+    return true
+  }
+  
+})
+
+console.log(numberFive)
