@@ -98,7 +98,11 @@ const numberFive = albums.filter(function(album) {
 console.log(numberFive)
 
 const numberSix = albums.map(function(album) {
-  return `${album.album} by ${album.artist}`
+  if (album.album === album.artist) {
+    return `${album.artist} self-titled`
+  } else {
+    return `'${album.album}' by ${album.artist}`
+  }
 })
 
 console.log(numberSix)
