@@ -75,13 +75,15 @@ console.log(numberTwo)
 
 // sort the albums by release date past to present
 
-const numberThree = albums.sort(function(albumA, albumB) {
-  return albumA.year - albumB.year
-})
+// const numberThree = albums.sort(function(albumA, albumB) {
+//   return albumA.year - albumB.year
+// })
 
-console.log(numberThree)
+// console.log(numberThree)
 
 // sort the albums alphabetically by genre
+
+
 
 // find albums celebrating a 5 or ten year anniversary
 
@@ -94,3 +96,9 @@ const numberFive = albums.filter(function(album) {
 })
 
 console.log(numberFive)
+
+const numberSix = albums.map(function(album) {
+  return `${album.album} by ${album.artist}`
+})
+
+console.log(numberSix)
