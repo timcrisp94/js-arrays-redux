@@ -106,3 +106,13 @@ const numberSix = albums.map(function(album) {
 })
 
 console.log(numberSix)
+
+let numberEight = []
+
+for (let i = 0; i < albums.length; i++) {
+  if (albums[i].type === "EP") {
+    numberEight.push(albums[i])
+  }
+}
+
+console.log("ep count: " + numberEight.length)
